@@ -1,0 +1,25 @@
+.header{
+  display:flex;
+  flex-flow: nowrap row;
+  justify-content: space-between;
+  align-items: center;
+  inline-size: 100vw;
+  max-inline-size: 1200px;
+  background-color: red;
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+  background-image: url('/logo.png');
+  background-size: contain;
+  inline-size: 60px;
+  block-size: 60px;
+
+  .return-home{
+    display: block;
+    border: 1px solid green;
+    background-color: green;
+  }
+}
+

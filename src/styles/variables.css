@@ -1,3 +1,43 @@
 :root{
-  font-family: 'pretendard'
+  /* Font Style */
+  --font-pretendard: 'Pretendard Variable', sans-serif;
+  
+  /* Font Size */
+  --title: 48px;
+  --sub-title: 24px;
+  --md: 20px;
+  --sm: 16px;
+  --text: 14px;
+  --petite: 12px;
+
+  /* Font Weight */
+  --bk: 900;
+  --eb: 800;
+  --bl: 700;
+  --sbl: 600;
+  --me: 500;
+  --lg: 400;
+  --slg: 300;
+  --exlg: 200;
+  --ty: 100;
+
+  /* Color */
+  --white: #ffffff;
+  --black: #111111;
+  --basic: #18A8F1;
+  --bgBule: #063A90;
+  --deep: #1D2B5A;
+  --dark: #021A30;
+  --cellTitle: rgba(24,168,241,0.3);
+  --gray: #EEEEEE;
+  --sunny: #F5A615;
+  --moon: #EDD635;
+  --nomalBus: #87C700;
+  --mainBus: #0050C7;
+
+  /* Border */
+  --line: 0.5px;
+
+  /* border-radius */
+  --round: 18px;
 }

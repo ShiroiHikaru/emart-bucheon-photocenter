@@ -1,4 +1,8 @@
+'use client'
+
 import Link from "next/link"
+import { MoonStarsIcon } from "@phosphor-icons/react"
+import { ArrowUp } from "lucide-react"
 import S from "./Header.module.css"
 
 export default function Header(){
@@ -12,8 +16,12 @@ export default function Header(){
       <nav className={S.nav}>
         <Link href="#pricing" className={S.linkPage}>가격 안내</Link>
         <Link href="#faq" className={S.linkPage}>자주 묻는 질문</Link>
-        <button type="button" aria-label="theme-다크모드" role="다크모드">🌙</button>
-        <button type="button" aria-label="theme-라이트모드" role="라이트모드">☀️</button>
+        <button type="button" className={`${S.themeBtn} ${S.returnTop}`} aria-label="top버튼" role="맨위로돌아가기">
+          <ArrowUp size={24} className={S.topBtn} color="var(--deep)" />
+        </button>
+        <button type="button" className={`${S.themeBtn} ${S.dark}`} aria-label="theme-다크모드" role="다크모드">
+          <MoonStarsIcon size={24} weight="fill" className={S.moon} color="var(--moon)"/>
+        </button>
       </nav>
     </header>
   )

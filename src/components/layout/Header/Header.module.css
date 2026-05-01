@@ -3,11 +3,16 @@
   flex-flow: nowrap row;
   justify-content: space-between;
   align-items: center;
-  inline-size: 100vw;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   max-inline-size: 1200px;
-  background-color: red;
-  margin: 0;
+  inline-size: 100vw;
+  padding-inline: calc(100vw - 1200px);
   padding-block: 20px;
+  background-color: var(--white);
+  border-bottom: 2px solid var(--black);
 
   .logo{
   background-image: url('/logo.png');
@@ -27,12 +32,42 @@
     flex-flow: nowrap row;
     gap: 20px;
 
-    .linkPage{
-      color: #111111;
-      text-decoration: none;
-    }
+  }
+  
+  .linkPage{
+    font-size: var(--sm);
+    font-weight: var(--lg);
+    align-content: center;
+    color: #111111;
+    text-decoration: none;
+  }
+  
+  .linkPage:hover{
+      font-weight: var(--bl);
+      color: var(--basic);
+      border-bottom: 2px solid var(--basic);
+  }
+  
+  .themeBtn{
+    display:flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+    inline-size: 35px;
+    block-size: 35px;
+    padding: 4px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    border: none;
   }
 
+  .dark{
+    background-color: var(--deep);
+  }
+
+  .returnTop{
+    background-color: var(--gray);
+  }
 }
 
 

@@ -7,19 +7,33 @@
   max-inline-size: 1200px;
   background-color: red;
   margin: 0;
-  padding: 0;
-}
+  padding-block: 20px;
 
-.logo{
+  .logo{
   background-image: url('/logo.png');
   background-size: contain;
   inline-size: 60px;
   block-size: 60px;
 
-  .return-home{
+  .return_home{
     display: block;
-    border: 1px solid green;
-    background-color: green;
+    inline-size: 60px;
+    block-size: 60px;
+    }
   }
+
+  .nav{
+    display:flex;
+    flex-flow: nowrap row;
+    gap: 20px;
+
+    .linkPage{
+      color: #111111;
+      text-decoration: none;
+    }
+  }
+
 }
+
+
 

@@ -1,12 +1,15 @@
 import localFont from 'next/font/local'
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from '@/components/layout/Header/Header'
+import Footer from '@/components/layout/Footer/Footer'
+import Providers from '@/components/layout/Providers'
 
 const pretendard = localFont({
   src: '../../node_modules/pretendard/dist/web/variable/woff2/PretendardVariable.woff2',
   display: 'swap',
   weight: '45 920',
-   variable: '--font-pretendard',  
+  variable: '--font-pretendard',  
 })
 
 export const metadata: Metadata = {
@@ -21,7 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${pretendard.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Providers>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </Providers>
+      </body>
     </html>
-  );
+  )
 }

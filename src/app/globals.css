@@ -34,9 +34,21 @@ body{
   list-style-type: none;
   font-family: var(--font-pretendard), sans-serif;
 
+  p{
+    margin: 0;
+    padding: 0;
+  }
+
   main{
     position: relative;
-    padding-top: 100px;
+    max-block-size: auto;
+    overflow-x: hidden;
+
+    section{
+      margin-block-start: 100px;
+      inline-size: 100vw;
+      max-inline-size: 1920px;
+    }
   }
 }
 

@@ -1,0 +1,73 @@
+.introContain{
+  position: relative;
+  inline-size: 100%;
+  block-size: 810px;
+  background-color: var(--black);
+
+  .intiroTitle{
+    display:flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    inline-size: 100%;
+    block-size: 100%;
+
+    .mainTitle{
+      font-size: var(--title);
+      font-weight: var(--eb);
+      color: var(--white);
+    }
+
+    .subTitle{
+      inline-size: 420px;
+      padding-block-start: 60px;
+      text-align: center;
+      word-break:keep-all;
+      font-size: var(--sub-title);
+      font-weight: var(--lg);
+      color: var(--white);
+    }
+  }
+
+  .mouseRole{
+    display:flex;
+    flex-flow: nowrap column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 20;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--white);
+
+    .mouseIcon {
+      animation: floating 1.5s ease-in-out infinite;
+    }
+  }
+}
+
+.introContain::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  background-image: url(../../../../public/images/photocenter.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+
+@keyframes floating {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+

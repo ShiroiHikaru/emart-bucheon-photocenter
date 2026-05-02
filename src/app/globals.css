@@ -1,5 +1,6 @@
 /* css 변수 */
 @import '../styles/variables.css';
+
 /* 접근성 css */
 .sr-only {
           overflow: hidden;
@@ -28,9 +29,15 @@
 }
 
 body{
-  font-family: var(--font-pretendard), sans-serif;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  font-family: var(--font-pretendard), sans-serif;
+
+  main{
+    position: relative;
+    padding-top: 100px;
+  }
 }
 
 

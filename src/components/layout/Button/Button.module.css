@@ -1,0 +1,59 @@
+.menuContainer{
+  inline-size: 1200px;
+  max-inline-size: 100%;
+  block-size: 196px;
+  max-block-size: 100%;
+  margin: 0 auto;
+
+  .Buttons{
+    display: flex;
+    gap: 0;
+    block-size: 196px;
+    padding: 0px;
+    list-style-type: none;
+    color: var(--white);
+    background-color: var(--basic);
+
+  }
+  
+  .tapMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inline-size: 196px;
+
+  }
+  
+  .Buttons .tapMenu:nth-child(even){
+    background-color: var(--deep);
+  }
+
+  .category{
+    display:flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    inline-size: 100%;
+    block-size: 100%;
+    font-size: var(--md);
+    font-weight: var(--bl);
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .menu{
+    flex: 1;
+    background-image: url(../../../../public/images/menubg.jpg);
+    background-size: cover;
+
+    .menuLink{
+      color: var(--black);
+
+      .moreView{
+        font-size: var(--sm);
+        font-weight: var(--lg);
+      }
+    }
+  }
+}

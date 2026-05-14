@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(bash --version)",
+      "Bash(curl --version)",
+      "Bash(curl -fsSL https://raw.githubusercontent.com/PeonPing/peon-ping/main/install.sh)",
+      "Bash(bash)",
+      "Bash(curl -fsSL --write-out \"%{http_code}\" https://raw.githubusercontent.com/PeonPing/peon-ping/main/install.sh -o /dev/null)"
+    ]
+  }
+}

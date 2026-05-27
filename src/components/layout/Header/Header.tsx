@@ -16,7 +16,7 @@ export default function Header(){
       <nav className={S.nav}>
         <Link href="#pricing" className={S.linkPage}>가격 안내</Link>
         <Link href="#faq" className={S.linkPage}>자주 묻는 질문</Link>
-        <button type="button" className={`${S.themeBtn} ${S.returnTop}`} aria-label="top버튼" role="맨위로돌아가기">
+        <button type="button" className={`${S.themeBtn} ${S.returnTop}`} aria-label="top버튼" role="맨위로돌아가기" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <ArrowUp size={24} className={S.topBtn} color="var(--deep)" />
         </button>
         <button type="button" className={`${S.themeBtn} ${S.dark}`} aria-label="theme-다크모드" role="다크모드">

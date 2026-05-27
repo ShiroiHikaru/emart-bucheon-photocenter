@@ -2,10 +2,10 @@
 import S from '@/components/ui/intro/intro.module.css'
 import { MouseSimpleIcon } from "@phosphor-icons/react"
 
-function mainIntro(){
+function MainIntro(){
   return(
     <div className={S.introContain}>
-      <div className={S.intiroTitle}>
+      <div className={S.introTitle}>
         <p className={S.mainTitle} aria-label='인삿말' role='introduce'>
         2002년부터 소중한 순간을 기록해 온 24년의 노하우
       </p>
@@ -22,4 +22,4 @@ function mainIntro(){
 }
 
 
-export default mainIntro
+export default MainIntro

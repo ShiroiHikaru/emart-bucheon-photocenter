@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${pretendard.variable}`} suppressHydrationWarning>
-      <body>
+      <body suppressHydrationWarning>
         <Providers>
           <Header />
           <main>{children}</main>

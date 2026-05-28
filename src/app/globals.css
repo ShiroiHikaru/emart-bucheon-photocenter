@@ -33,6 +33,8 @@ body{
   padding: 0;
   list-style-type: none;
   font-family: var(--font-pretendard), sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
 
   p{
     margin: 0;

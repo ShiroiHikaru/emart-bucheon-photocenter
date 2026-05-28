@@ -12,7 +12,7 @@
   inline-size: 100vw;
   padding-inline: calc(100vw - 1200px);
   padding-block: 20px;
-  background-color: var(--white);
+  background-color: var(--header-bg);
   box-shadow: 2px 2px 5px rgba(17, 17, 17, 0.25);
 
   .logo{
@@ -39,7 +39,7 @@
     font-size: var(--sm);
     font-weight: var(--lg);
     align-content: center;
-    color: #111111;
+    color: var(--header-link);
     text-decoration: none;
   }
   

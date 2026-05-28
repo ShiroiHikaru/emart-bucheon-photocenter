@@ -1,8 +1,18 @@
+.sectionTitle {
+  font-size: var(--section-title);
+  font-weight: var(--bl);
+  color: var(--fg);
+  text-align: center;
+  margin: 100px 0 16px;
+}
+
 .container {
   display: flex;
   flex-flow: nowrap row;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: stretch;
   gap: 24px;
-  padding-inline: 40px;
+  inline-size: 1200px;
+  max-inline-size: 100%;
+  margin-inline: auto;
 }

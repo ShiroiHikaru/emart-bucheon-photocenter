@@ -19,6 +19,8 @@
   gap: 16px;
   padding: 30px;
   flex: 1;
+  inline-size: 100%;
+  box-sizing: border-box;
 }
 
 .title {
@@ -30,4 +32,5 @@
 
 .description {
   white-space: pre-line;
+  word-break: keep-all;
 }

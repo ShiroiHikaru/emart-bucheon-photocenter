@@ -6,6 +6,10 @@
   margin: 100px 0 16px;
 }
 
+.bold {
+  font-weight: var(--bl);
+}
+
 .container {
   display: flex;
   flex-flow: nowrap row;

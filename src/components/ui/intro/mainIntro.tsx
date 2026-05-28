@@ -24,7 +24,7 @@ function MainIntro(){
 
   return(
     <div className={S.introContain}>
-      <div className={S.intiroTitle}>
+      <div className={S.introTitle}>
         <p className={S.mainTitle} aria-label='인삿말' role='introduce'>
           {displayed}
           <span className={`${S.cursor} ${done ? S.cursorBlink : ''}`}>|</span>

@@ -4,6 +4,7 @@
   
   /* Font Size */
   --title: 48px;
+  --section-title: 36px;
   --sub-title: 24px;
   --md: 20px;
   --sm: 16px;
@@ -40,4 +41,17 @@
 
   /* border-radius */
   --round: 18px;
+
+  /* Theme */
+  --bg: #ffffff;
+  --fg: #111111;
+  --header-bg: #ffffff;
+  --header-link: #111111;
+}
+
+html.dark {
+  --bg: #021A30;
+  --fg: #ffffff;
+  --header-bg: #1D2B5A;
+  --header-link: #ffffff;
 }

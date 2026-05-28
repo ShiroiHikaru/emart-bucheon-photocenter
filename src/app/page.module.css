@@ -1,0 +1,22 @@
+.sectionTitle {
+  font-size: var(--section-title);
+  font-weight: var(--bl);
+  color: var(--fg);
+  text-align: center;
+  margin: 100px 0 16px;
+}
+
+.bold {
+  font-weight: var(--bl);
+}
+
+.container {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 24px;
+  inline-size: 1200px;
+  max-inline-size: 100%;
+  margin-inline: auto;
+}

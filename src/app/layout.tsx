@@ -23,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${pretendard.variable}`}>
-      <body>
+    <html lang="ko" className={`${pretendard.variable}`} suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <Providers>
           <Header />
           <main>{children}</main>

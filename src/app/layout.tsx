@@ -13,7 +13,7 @@ const pretendard = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "부천 이사진 - 증명사진 전문",
+  title: "이마트 포토센터 부천점",
   description: "2002년부터 소중한 순간을 기록해 온 24년의 노하우. 각종 증명사진부터 비디오 변환까지.",
 };
 

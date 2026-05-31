@@ -9,10 +9,9 @@ function formatDateTime(date: Date) {
 }
 
 export default function Footer() {
-  const [now, setNow] = useState('')
+  const [now, setNow] = useState(formatDateTime(new Date()))
 
   useEffect(() => {
-    setNow(formatDateTime(new Date()))
     const timer = setInterval(() => setNow(formatDateTime(new Date())), 1000)
     return () => clearInterval(timer)
   }, [])
@@ -37,7 +36,7 @@ export default function Footer() {
           <small className={S.copyright}>
             COPYRIGHT &copy; 2026 by Bucheon Emart Photocenter All rights reserved
           </small>
-          <small className={S.updateTime}>
+          <small className={S.updateTime} suppressHydrationWarning>
             UPDATE TIME : {now}
           </small>
         </div>

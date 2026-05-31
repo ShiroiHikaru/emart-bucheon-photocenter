@@ -44,7 +44,7 @@ body{
   main{
     position: relative;
     max-block-size: auto;
-    overflow-x: hidden;
+    overflow-x: clip;
 
     section{
       margin-block-start: 100px;
